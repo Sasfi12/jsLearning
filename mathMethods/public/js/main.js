@@ -30,9 +30,9 @@ console.log(Math.min(-2 , 100 , 8 , 57))
 function prime(n) {
     let prime = true ; 
     if (n >= 2 ) {
-    for(let i = 2 ; i >= n / 2 ; i++) {
-        if(n % i == 0) {
-            return prime = false  
+    for(let i = 2 ; i <= n / 2 ; i++) {
+        if(n % i === 0) {
+            prime = false  ;
         }
 
     }
