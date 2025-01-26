@@ -27,25 +27,20 @@ console.log(Math.max(-2 , 100 , 8 , 57))
 console.log(Math.min(-2 , 100 , 8 , 57))
 
 
-function prime(n) {
-    let prime = true ; 
+function prime(n) { 
     if (n >= 2 ) {
     for(let i = 2 ; i <= n / 2 ; i++) {
         if(n % i === 0) {
-            prime = false  ;
+            return false  ;
         }
 
     }
-    if(prime) {
-        return true 
-    }
-    else {
-        return false 
-    }
+    return true ; 
+    
 
 }
 else {
     console.log('Not acceptable')
 }
 }
-console.log(prime(21)) 
+console.log(prime(13)) 
